@@ -1,0 +1,20 @@
+name: CI/CD counter app
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  #First we will see the application build or not , then we will deploy in EC2
+
+  Deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to Server 1
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.AWS_PRIVATE_KEY  }}
+          REMOTE_HOST: ec2-3-84-210-114.compute-1.amazonaws.com
+          REMOTE_USER: ubuntu
+          TARGET:

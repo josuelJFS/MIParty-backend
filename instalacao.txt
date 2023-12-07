@@ -1,0 +1,7 @@
+npm install --save body-parser => {
+    app.use(bodyParser.urlencoded({extended:false}));
+    app.use(bodyParser.json());
+ }
+ [
+     server para enviar apenas dados simples e so aceitar json
+ ]
