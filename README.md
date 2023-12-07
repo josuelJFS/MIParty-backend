@@ -1,26 +1,27 @@
-# Welcome to the MIParty Project backend
+# Welcome to the MIParty Project Backend
 
-## necesario
+## Requirements
 
-**[docker e docker-compose](https://docs.docker.com/desktop/) installation is required.**
+**[Docker and Docker Compose](https://docs.docker.com/desktop/) installation is required.**
 
-com docker instalado vamos abrir o terminal na raiz do projeto e executar
+With Docker installed, let's open the terminal in the project's root and run
 
-```
+```bash
 $ docker-compose up
 ```
 
-agora só aguarda enquanto o docker configurar o cotainers com o ambientes de node e mysql
+Now just wait while Docker sets up the containers with the Node and MySQL environments.
 
-apos baixar tudo e necessario criar as tabelas utilizadas para contrucao do app e regra denegocio
+Once everything is downloaded, it is necessary to create the tables used for building the app and business rules.
 
-**pelo navegador ou postmen ou qualquer lugar onde voce possa execultar uma api com metodo get**
+**Through the browser, Postman, or any tool where you can execute an API with the GET method**
 
-metodo get: `http://localhost:3333/database/create`
+GET method: `http://localhost:3333/database/create`
 
-essa mensagem irá aárecer
+This message will appear:
 
 `"status": true,"mensage": "gerado"`
-então tudo ocorreu bem
 
-### agora o tudo está ok e você ja pode conectar no frontend [MIParty](https://expo.dev/)
+Then everything went well.
+
+### Now everything is okay, and you can connect to the frontend [MIParty](https://github.com/josuelJFS/MIParty-Project).
